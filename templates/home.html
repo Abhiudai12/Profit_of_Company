@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<title>Profit_Prediction</title>
+</head>
+<body>
+<h1><div style=text-align:center><font color="blue">Profit_Prediction from Startup spendings</font></div></h1>
+<hr>
+</br>
+<h2><div style=text-align:center>Enter The Values :-</div></h2>
+</br>
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <form method="post" action="/predict">
+                <div class="form-group">
+                    <label for="NewYork"><p class="font-weight-bold">New York</p></label>
+                    <select name="NewYork" id="NewYork" class="form-control">
+                        <option value="1">Yes (1)</option>
+                        <option value="0">No (0)</option>
+                    </select>
+                    <small id="nyhelp" class="form-text text-muted">Enter 1 if state is New York else 0</small>
+                </div>
+                
+                <div class="form-group">
+                    <label for="California"><p class="font-weight-bold">New York</p></label>
+                    <select name="California" id="California" class="form-control">
+                        <option value="1">Yes (1)</option>
+                        <option value="0">No (0)</option>
+                    </select>
+                    <small id="nyhelp" class="form-text text-muted">Enter 1 if state is New York else 0</small>
+                </div>
+                
+                <div class="form-group">
+                    <label for="Florida"><p class="font-weight-bold">New York</p></label>
+                    <select name="Florida" id="Florida" class="form-control">
+                        <option value="1">Yes (1)</option>
+                        <option value="0">No (0)</option>
+                    </select>
+                    <small id="nyhelp" class="form-text text-muted">Enter 1 if state is New York else 0</small>
+                </div>
+                
+                <div class="form-group">
+                    <label for="Rndd_spend"><p class="font-wight-bold">Rndd_spend</p></label>
+                    <input type="text" name="Rndd_spend">
+                    <small id="Rndd_spendhelp" class="form-text text muted">Enter the value of R&D spend</small>
+                </div>
+                <div class="form-group">
+                    <label for="admin_spend"><p class="font-wight-bold">admin_spend</p></label>
+                    <input type="text" name="admin_spend">
+                    <small id="admin_spendhelp" class="form-text text muted">Enter the value of admin spend</small>
+                </div>
+                <div class="form-group">
+                    <label for="market_spend"><p class="font-wight-bold">market_spend</p></label>
+                    <input type="text" name="market_spend">
+                    <small id="market_spendhelp" class="form-text text muted">Enter the value of market spend</small>
+                </div>
+                <input class ="btn btn-primary" type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
